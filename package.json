@@ -2,37 +2,27 @@
   "private": false,
   "name": "ssu-media-and-tech-code",
   "description": "Soongsil University Media and tech lecture report base code",
+  "version": "1.0.0",
+  "type": "module",
   "author": {
     "name": "Kangjae Choi",
     "email": "awpe89@gmail.com"
   },
-  "version": "1.0.0",
-  "type": "module",
-  "main": "./dist/ssu-media-and-tech-code.js",
-  "module": "./dist/ssu-media-and-tech-code.umd.cjs",
-  "types": "./dist/main.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/ssu-media-and-tech-code.js",
-      "require": "./dist/ssu-media-and-tech-code.umd.cjs"
-    }
+  "bin": {
+    "ssu-media-and-tech-code": "./dist/cli.js"
   },
-  "files": ["./dist"],
+  "files": ["./src", "./template"],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc"
   },
   "dependencies": {
-    "p5": "^2.0.5"
+    "prompts": "^2.4.2"
   },
   "devDependencies": {
     "@types/node": "^24.3.1",
-    "@types/p5": "^1.7.6",
+    "@types/prompts": "^2.4.9",
     "prettier": "^3.6.2",
-    "typescript": "~5.8.3",
-    "vite": "^7.1.2",
-    "vite-plugin-dts": "^4.5.4"
+    "typescript": "~5.8.3"
   },
   "repository": {
     "type": "git",
