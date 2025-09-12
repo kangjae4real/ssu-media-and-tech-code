@@ -2,7 +2,7 @@
   "private": false,
   "name": "ssu-media-and-tech-starter",
   "description": "Make Soongsil University Media and tech lecture report base code",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "type": "module",
   "author": {
     "name": "Kangjae Choi",
