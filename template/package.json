@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "mv ./gitignore ./.gitignore"
   },
   "dependencies": {
     "p5": "^2.0.5"
