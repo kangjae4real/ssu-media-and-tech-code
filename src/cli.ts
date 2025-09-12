@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { existsSync, mkdirSync, cpSync } from 'fs';
+import { existsSync, mkdirSync, cpSync, renameSync } from 'fs';
 import { dirname, resolve, join } from 'path';
 import { fileURLToPath } from 'url';
 import prompts, { type Answers } from 'prompts';
@@ -35,6 +35,14 @@ const main = async () => {
   console.log(`'${userProjectName}' 프로젝트를 생성합니다...`);
 
   cpSync(templateDir, targetDir, { recursive: true });
+
+  try {
+    const sourceGitignore = join(targetDir, 'gitignore');
+    const targetGitignore = join(targetDir, '.gitignore');
+    renameSync(sourceGitignore, targetGitignore);
+  } catch (error) {
+    console.warn('gitignore 파일을 찾을 수 없어 이름 변경을 건너뜁니다.');
+  }
 
   console.log('프로젝트 생성이 완료되었습니다!');
   console.log('아래 명령어를 실행하여 프로젝트를 시작하세요:');
