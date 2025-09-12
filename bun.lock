@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "ssu-media-and-tech-code",
+      "name": "ssu-media-and-tech-starter",
       "dependencies": {
         "prompts": "^2.4.2",
       },

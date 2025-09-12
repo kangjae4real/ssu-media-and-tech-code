@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "ssu-media-and-tech-code",
-  "description": "Soongsil University Media and tech lecture report base code",
+  "name": "ssu-media-and-tech-starter",
+  "description": "Make Soongsil University Media and tech lecture report base code",
   "version": "1.0.0",
   "type": "module",
   "author": {
@@ -9,7 +9,7 @@
     "email": "awpe89@gmail.com"
   },
   "bin": {
-    "ssu-media-and-tech-code": "./dist/cli.js"
+    "ssu-media-and-tech-starter": "./dist/cli.js"
   },
   "files": ["./src", "./template"],
   "scripts": {
