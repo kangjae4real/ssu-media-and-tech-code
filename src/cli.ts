@@ -47,8 +47,8 @@ const main = async () => {
   console.log('프로젝트 생성이 완료되었습니다!');
   console.log('아래 명령어를 실행하여 프로젝트를 시작하세요:');
   console.log(`cd ${userProjectName}`);
-  console.log('bun install');
-  console.log('bun run dev');
+  console.log('npm install');
+  console.log('npm run dev');
 };
 
 main().catch((err) => {
